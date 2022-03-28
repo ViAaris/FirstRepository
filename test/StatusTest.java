@@ -22,7 +22,7 @@ public class StatusTest {
         Window w = new Window();
         w.initFrame();
         w.initBoxes();
-        List<Cell> list = w.boxes[12][10].cell.near;
+        List<Cell> list = w.boxes[12][10].cell.nearCells;
         Assertions.assertEquals(8, list.size());
     }
 }

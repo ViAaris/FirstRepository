@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cell {
-    public List<Cell> near;
+    public List<Cell> nearCells;
     Status status;
 
 
     public Cell() {
         status = Status.NONE;
-        near = new ArrayList<>();
+        nearCells = new ArrayList<>();
     }
 
     public void step1() {
@@ -23,12 +23,12 @@ public class Cell {
     }
 
     void addNear(Cell cell) {
-        near.add(cell);
+        nearCells.add(cell);
     }
 
      int countNearCells() {
         int count = 0;
-        for (Cell cell : near) {
+        for (Cell cell : nearCells) {
             if (cell.status.isCell()) count++;
 
         }
@@ -37,7 +37,7 @@ public class Cell {
 
 
     public void turn() {
-        for (Cell cell : near) {
+        for (Cell cell : nearCells) {
             cell.status = cell.status.isCell() ? Status.NONE : Status.LIVE;
         }
     }
