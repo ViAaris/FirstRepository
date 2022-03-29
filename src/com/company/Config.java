@@ -13,7 +13,7 @@ public class Config {
         switch (status) {
             default:
             case NONE:
-                return Color.GRAY;
+                return Color.GREEN;
             case LIVE:
                 return Color.WHITE;
             case BORN:
