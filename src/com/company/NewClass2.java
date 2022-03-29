@@ -4,5 +4,8 @@ public class NewClass2 {
 
     Cell cell;
 
+    public NewClass2(){
+        
+    }
 
 }
