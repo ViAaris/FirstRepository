@@ -14,4 +14,11 @@ public class NewClass2 {
 
     }
 
+    @Override
+    public String toString() {
+        return "NewClass2{" +
+                "cell=" + cell +
+                ", newClass2=" + newClass2 +
+                '}';
+    }
 }
