@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cell {
-    public List<Cell> nearCells;
+    public List<Cell> near;
     Status status;
 
 
