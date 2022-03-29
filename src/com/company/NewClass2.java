@@ -4,8 +4,11 @@ public class NewClass2 {
 
     Cell cell;
 
-    public NewClass2(){
-        
+
+    NewClass2 newClass2;
+
+    public NewClass2(NewClass2 nw){
+        this.newClass2 = nw;
     }
 
 }
