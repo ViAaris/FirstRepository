@@ -13,4 +13,19 @@ public class NewClass2 {
         System.out.println(user2);
     }
 
+    public Cell getCell() {
+        return cell;
+    }
+
+    public void setCell(Cell cell) {
+        this.cell = cell;
+    }
+
+    public com.company.NewClass2 getNewClass2() {
+        return newClass2;
+    }
+
+    public void setNewClass2(com.company.NewClass2 newClass2) {
+        this.newClass2 = newClass2;
+    }
 }
