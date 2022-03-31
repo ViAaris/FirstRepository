@@ -11,7 +11,7 @@ public enum Status {
             case NONE:
                 return (around == 3) ? BORN : NONE;
             case LIVE:
-                return (around <= 1 || around > 3) ? DEAD : LIVE;
+                return (around <= 1 || around >= 4) ? DEAD : LIVE;
             default:
                 return this;
         }
