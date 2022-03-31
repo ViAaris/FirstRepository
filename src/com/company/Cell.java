@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Cell {
     public List<Cell> nearCells;
-    Status status;
+    Status statuss;
 
 
     public Cell() {
